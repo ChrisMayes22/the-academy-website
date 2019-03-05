@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    text-indent: 4px;
+}
+
+.homepage-header {
+    height: 22vh;
+    width: 100vw;
+    color: #E5EFF5;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.homepage-header__top-row {
+    background-color: #005C98;
+    width: 100vw;
+    padding: 4px;
+}
+
+.homepage-header__top-nav {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.homepage-header__top-nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 4px 5px;
+}
+
+.homepage-header__middle-row {
+    background-color: #1A6DA3;
+    width: 100vw;
+    padding: 4px;
+}
+
+.homepage-header__bottom-row {
+    background-color: #026ECA;
+    width: 100vw;
+    padding: 4px;
+}
+
+.homepage-header__banner-image {
+    max-height: 11.7vmin;
+    max-width: 11.7vmin;
+    margin: 0.1rem 0.5rem 0 0;
+
+}
+
+.homepage-header__banner-text {
+    display: inline-block;
+    padding: 2.5vw;
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    position: relative;
+    top: 0.1rem;
+}
+
+.homepage-header__login-button {
+    height: 30px;
+    width: 25.9vw;
+    background-color: #EBEBEB;
+    text-align: center;
+    padding: 5px;
+    margin: 0 0 0 10px;
+    color: #388CD2;
+}
+
+.homepage-header__bottom-nav li{
+    display: none;
+}
+
+.search-form__input {
+    width: 30.7vw;
+}
+
+button img {
+    max-width: 17px;
+    margin: 3px 0 0 0;
+}
+
+[type] {
+    border: none;
+    height: 4.6vh;
+}
+
+.flex-container--row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-toggle {
+    width: 18.9vw;
+}
