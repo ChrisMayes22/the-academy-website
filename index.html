@@ -13,7 +13,7 @@
             <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
             <link rel="manifest" href="assets/site.webmanifest">
             <link rel="stylesheet" href="index.css">
-            <script src="script.js"></script>
+            <script src="script.js" defer></script>
         </head>
         <body>
             <header class="homepage-header">
@@ -25,22 +25,24 @@
                             <li><a>FORMER STUDENT</a></li>
                         </ul>   
                     </nav>
-                    <div class="flex-container--row">
+                    <div class="flex-cont__row">
                         <img class="homepage-header__banner-image" src="assets/academy-logo.png" /> 
                         <span class="homepage-header__banner-text">THE ACADEMY</span>
                     </div> 
                 </section> 
-                <section class="homepage-header__middle-row flex-container--row">
-                    <form action="" class="search-form flex-container--row">
+                <section class="homepage-header__middle-row flex-cont__row">
+                    <form action="" class="search-form flex-cont__row">
                         <input type="text" placeholder="Search..." name="search" class="search-form__input">
                         <button type="submit" class="search-form__button"><img src="assets/search.png"/></button>
                     </form>
                     <a class="homepage-header__login-button">LOGIN</a>
                 </section>
                 <section class="homepage-header__bottom-row">
-                    <button class="display-toggle">+ MENU</div>
+                    <div class="flex-cont__row--align-bottom">
+                        <button class="display-toggle" id="menu">+ MENU</div>
+                    </div>
                     <nav class="homepage-header__bottom-nav">
-                        <ul>
+                        <ul id="toggleView">
                             <li><a>ABOUT</a></li>
                             <li><a>ADMISSIONS</a></li>
                             <li><a>ACADEMICS</a></li>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400');
 
 * {
     box-sizing: border-box;
@@ -50,7 +51,6 @@ input {
 .homepage-header__bottom-row {
     background-color: #026ECA;
     width: 100vw;
-    padding: 4px;
 }
 
 .homepage-header__banner-image {
@@ -77,10 +77,13 @@ input {
     text-align: center;
     padding: 5px;
     margin: 0 0 0 10px;
-    color: #388CD2;
+    color: #026FCA;
+    letter-spacing: 0.1rem;
+    font-size: 0.75rem;
+    font-weight: bold;
 }
 
-.homepage-header__bottom-nav li{
+.homepage-header__bottom-nav ul:not(.active){
     display: none;
 }
 
@@ -98,13 +101,27 @@ button img {
     height: 4.6vh;
 }
 
-.flex-container--row {
+.flex-cont__row {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    max-height: 6.6vh;
 }
 
 .display-toggle {
     width: 18.9vw;
+    background-color: #00243D;
+    width: 21.1vw;
+    height: 4.5vh;
+    border: none;
+    margin: 5px 0 0 15px;
+    color: #EBEBEB;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.01rem;
+}
+
+.active{
+    background-color: #DDEAF4;
+    color: #222A6A;
 }
