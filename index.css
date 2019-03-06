@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Raleway:400');
 
 * {
     box-sizing: border-box;
@@ -53,7 +52,7 @@ input {
     width: 100vw;
 }
 
-.homepage-header__banner-image {
+.homepage-header__school-logo {
     max-height: 11.7vmin;
     max-width: 11.7vmin;
     margin: 0.1rem 0.5rem 0 0;
@@ -83,9 +82,46 @@ input {
     font-weight: bold;
 }
 
+.homepage-header__bottom-nav{
+    font-size: 1.1rem;
+    font-weight: 300;
+    list-style-type: none;
+}
+
+
 .homepage-header__bottom-nav ul:not(.active){
     display: none;
 }
+
+.homepage-header__bottom-nav ul{
+    list-style-type: none;
+}
+
+.homepage-header__bottom-nav li{
+    margin: 0 0 0.5rem 1rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 0.4rem 1rem;
+}
+
+.homepage-header__banner-image{
+    height: 23.45vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.image-0{
+    background-image: url(./assets/the-academy0.jpg);
+}
+
+.image-1{
+    background-image: url(./assets/the-academy1.jpg);
+}
+
+.image-2{
+    background-image: url(./assets/the-academy2.jpg);
+}
+
 
 .search-form__input {
     width: 30.7vw;
@@ -109,19 +145,29 @@ button img {
     max-height: 6.6vh;
 }
 
+.flex-cont__col {
+    display: flex;
+    flex-direction: column;
+}
+
 .display-toggle {
-    width: 18.9vw;
+    width: 19.3vw;
     background-color: #00243D;
     width: 21.1vw;
     height: 4.5vh;
     border: none;
     margin: 5px 0 0 15px;
     color: #EBEBEB;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.01rem;
+    font-weight: 300;
+}
+
+.display-toggle:hover{
+    cursor: pointer;
 }
 
 .active{
     background-color: #DDEAF4;
-    color: #222A6A;
+    color: #00243D;
 }
