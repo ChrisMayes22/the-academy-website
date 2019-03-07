@@ -5,7 +5,7 @@ const els = {
     bannerImage: document.getElementById('bannerImage')
 }
 
-//Setup and implement expanding menu button (mobile view only)
+// Setup and implement expanding menu button (mobile view only)
 const clickHandlers = {
     addActive: function(){
         els.toggleView.className += " active";
@@ -48,7 +48,7 @@ const timers = {
         const timerPromise = new Promise(function(resolve, err){
             setTimeout(function() {
                 resolve(imageCycler.cb([0,1,2]));
-              }, 5000)
+              }, 10000)
             }).then(function(cycle){
                 cycle();
                 timers.imageTimer();

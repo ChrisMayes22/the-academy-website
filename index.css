@@ -89,8 +89,33 @@ input {
 }
 
 
-.homepage-header__bottom-nav ul:not(.active){
-    display: none;
+.homepage-header__bottom-nav ul {
+    height: 0px;
+    background-color: #DDEAF4;
+    transition-property: height;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.homepage-header__bottom-nav ul.active{
+    height: 36.4vh;
+    transition-property: height;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.homepage-header__bottom-nav li {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+    transition-delay: 0s;
+}
+
+.homepage-header__bottom-nav ul.active li {
+    opacity: 100;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+    transition-delay: 0.15s;
 }
 
 .homepage-header__bottom-nav ul{
@@ -116,10 +141,12 @@ input {
 
 .image-1{
     background-image: url(./assets/the-academy1.jpg);
+    background-position: 100% 55%;
 }
 
 .image-2{
     background-image: url(./assets/the-academy2.jpg);
+    background-position: 100% 30%;
 }
 
 
