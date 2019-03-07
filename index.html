@@ -16,9 +16,9 @@
             <script src="script.js" defer></script>
         </head>
         <body>
-            <header class="homepage-header">
-                <section class="homepage-header__top-row">
-                    <nav class="homepage-header__top-nav">  
+            <header class="header">
+                <section class="header__top-row">
+                    <nav class="header__top-nav">  
                         <ul>
                             <li><a>DONATE</a></li>
                             <li><a>PTA</a></li>
@@ -26,22 +26,22 @@
                         </ul>   
                     </nav>
                     <div class="flex-cont__row">
-                        <img class="homepage-header__school-logo" src="assets/academy-logo.png" /> 
-                        <span class="homepage-header__banner-text">THE ACADEMY</span>
+                        <img class="header__logo" src="assets/academy-logo.png" /> 
+                        <span class="header__banner-text">THE ACADEMY</span>
                     </div> 
                 </section> 
-                <section class="homepage-header__middle-row flex-cont__row">
+                <section class="header__middle-row flex-cont__row">
                     <form action="" class="search-form flex-cont__row">
                         <input type="text" placeholder="Search..." name="search" class="search-form__input">
-                        <button type="submit" class="search-form__button"><img src="assets/search.png"/></button>
+                        <button type="submit" class="header__button"><img src="assets/search.png"/></button>
                     </form>
-                    <a class="homepage-header__login-button">LOGIN</a>
+                    <a class="header__login-button header__button">LOGIN</a>
                 </section>
-                <section class="homepage-header__bottom-row">
+                <section class="header__bottom-row">
                     <div class="flex-cont__row--align-bottom">
                         <button class="display-toggle" id="menu">+ MENU</div>
                     </div>
-                    <nav class="homepage-header__bottom-nav">
+                    <nav class="header__bottom-nav">
                         <ul id="toggleView">
                             <div class="flex-cont__col">
                                 <li><a>ABOUT</a></li>
@@ -55,7 +55,13 @@
                         </ul>
                     </nav>
                 </section>
-                <div class="homepage-header__banner-image image-2" id="bannerImage"></div>
+                <div class="header__banner-image image-2" id="bannerImage"></div>
             </header>
+            <aside class="maps-aside">
+                <!-- <img class="maps-aside__pointer-image" src="assets/map-marker.png"/> -->
+                <button class="maps-aside__map">MAP</button>
+                <span class="maps-aside__italic-text">Prospective</span><span class="maps-aside__bold-text">FAMILIES</span>
+                <!-- <img class="maps-aside__arrows-image" src="assets/arrows.png"/> -->
+            </aside>
         </body>
 </html>

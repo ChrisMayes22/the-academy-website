@@ -17,49 +17,53 @@ input {
     text-indent: 4px;
 }
 
-.homepage-header {
+button:hover, a:hover {
+    cursor: pointer;
+}
+
+.header {
     height: 22vh;
     width: 100vw;
     color: #E5EFF5;
     font-family: 'PT Sans', sans-serif;
 }
 
-.homepage-header__top-row {
+.header__top-row {
     background-color: #005C98;
     width: 100vw;
     padding: 4px;
 }
 
-.homepage-header__top-nav {
+.header__top-nav {
     text-align: center;
     font-size: 0.75rem;
 }
 
-.homepage-header__top-nav li {
+.header__top-nav li {
     display: inline-block;
     list-style-type: none;
     margin: 4px 5px;
 }
 
-.homepage-header__middle-row {
+.header__middle-row {
     background-color: #1A6DA3;
     width: 100vw;
     padding: 4px;
 }
 
-.homepage-header__bottom-row {
+.header__bottom-row {
     background-color: #026ECA;
     width: 100vw;
 }
 
-.homepage-header__school-logo {
+.header__logo {
     max-height: 11.7vmin;
     max-width: 11.7vmin;
-    margin: 0.1rem 0.5rem 0 0;
+    margin: 0.1rem 0.5rem 0.1rem 0;
 
 }
 
-.homepage-header__banner-text {
+.header__banner-text {
     display: inline-block;
     padding: 2.5vw;
     font-weight: bold;
@@ -69,7 +73,7 @@ input {
     top: 0.1rem;
 }
 
-.homepage-header__login-button {
+.header__login-button {
     height: 30px;
     width: 25.9vw;
     background-color: #EBEBEB;
@@ -82,14 +86,14 @@ input {
     font-weight: bold;
 }
 
-.homepage-header__bottom-nav{
+.header__bottom-nav{
     font-size: 1.1rem;
     font-weight: 300;
     list-style-type: none;
 }
 
 
-.homepage-header__bottom-nav ul {
+.header__bottom-nav ul {
     height: 0px;
     background-color: #DDEAF4;
     transition-property: height;
@@ -97,43 +101,52 @@ input {
     transition-timing-function: linear;
 }
 
-.homepage-header__bottom-nav ul.active{
+.header__bottom-nav ul.active{
     height: 36.4vh;
     transition-property: height;
     transition-duration: 0.3s;
     transition-timing-function: linear;
 }
 
-.homepage-header__bottom-nav li {
+.header__bottom-nav li {
     opacity: 0;
     transition-property: opacity;
     transition-duration: 0.1s;
     transition-delay: 0s;
 }
 
-.homepage-header__bottom-nav ul.active li {
+.header__bottom-nav ul.active li {
     opacity: 100;
     transition-property: opacity;
     transition-duration: 0.1s;
     transition-delay: 0.15s;
 }
 
-.homepage-header__bottom-nav ul{
+.header__bottom-nav ul{
     list-style-type: none;
 }
 
-.homepage-header__bottom-nav li{
+.header__bottom-nav li{
     margin: 0 0 0.5rem 1rem;
     font-family: 'Raleway', sans-serif;
     margin: 0.4rem 1rem;
 }
 
-.homepage-header__banner-image{
+.header__banner-image{
     height: 23.45vh;
     width: 100vw;
     background-size: cover;
     background-repeat: repeat;
 }
+
+.header__button {
+    background-color: rgb(220, 220, 220);
+}
+
+.header__button:hover {
+    background-color: #EBEBEB;
+}
+
 
 .image-0{
     background-image: url(./assets/the-academy0.jpg);
@@ -162,6 +175,13 @@ button img {
 [type] {
     border: none;
     height: 4.6vh;
+}
+
+[placeholder="Search..."] {
+    color: black;
+    opacity: 100;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75rem;
 }
 
 .flex-cont__row {
@@ -197,4 +217,41 @@ button img {
 .active{
     background-color: #DDEAF4;
     color: #00243D;
+}
+
+.maps-aside {
+    height: 6.4vh;
+    width: 100vw;
+    margin: 0.5rem 0;
+    background-image: linear-gradient(to bottom, #FFCB00, #FFB437);
+    position: relative;
+    top: 25vh;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.maps-aside__map {
+    display: inline-block;
+    height: 100%;
+    width: 26.2vw;
+    background-image: linear-gradient(to bottom, #FFCB00, #FFB437);
+    border: solid 1px #FFB437;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.maps-aside__map:hover {
+    background-image: linear-gradient(to bottom, #FFCB00, #FFCB00);
+    cursor: pointer;
+}
+
+.maps-aside__bold-text{
+    font-weight: 700;
+    color: #3E3E34
+}
+
+.maps-aside__italic-text{
+    margin: 0 0.5rem 0 0;
+    font-style: italic;
+    color: #3E3E34
 }
