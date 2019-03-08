@@ -1,71 +1,131 @@
 <!DOCTYPE html>
 <html lang="en-US">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta name="author" content="Chris Mayes">
-            <meta property="og:image" content="https://commons.wikimedia.org/wiki/File:Parthenon_Athens.jpg">
-            <meta property="og:description" content="A demo website created for a fictional high school.">
-            <meta property="og:title" content="The Academy">
-            <title>The Academy - School for Modern-Day Philosophers</title>
-            <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-            <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-            <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-            <link rel="manifest" href="assets/site.webmanifest">
-            <link rel="stylesheet" href="index.css">
-            <script src="script.js" defer></script>
-        </head>
-        <body>
-            <header class="header">
-                <section class="header__top-row">
-                    <nav class="header__top-nav">  
-                        <ul>
-                            <li><a>DONATE</a></li>
-                            <li><a>PTA</a></li>
-                            <li><a>FORMER STUDENT</a></li>
-                        </ul>   
-                    </nav>
-                    <div class="flex-cont__row">
-                        <img class="header__logo" src="assets/academy-logo.png" /> 
-                        <span class="header__banner-text">THE ACADEMY</span>
-                    </div> 
-                </section> 
-                <section class="header__middle-row flex-cont__row">
-                    <form action="" class="search-form flex-cont__row">
-                        <input type="text" placeholder="Search..." name="search" class="search-form__input">
-                        <button type="submit" class="header__button"><img src="assets/search.png"/></button>
-                    </form>
-                    <a class="header__login-button header__button">LOGIN</a>
-                </section>
-                <section class="header__bottom-row">
-                    <div class="flex-cont__row--align-bottom">
-                        <button class="display-toggle" id="menu">+ MENU</div>
-                    </div>
-                    <nav class="header__bottom-nav">
-                        <ul id="toggleView">
-                            <div class="flex-cont__col">
-                                <li><a>ABOUT</a></li>
-                                <li><a>ADMISSIONS</a></li>
-                                <li><a>ACADEMICS</a></li>
-                                <li><a>THE ARTS</a></li>
-                                <li><a>ATHLETICS</a></li>
-                                <li><a>CAMPUS LIFE</a></li>
-                                <li><a>INVEST IN ACADEMICS</a></li>
-                            </div>    
-                        </ul>
-                    </nav>
-                </section>
-                <div class="header__banner-image image-2" id="bannerImage"></div>
-                <aside class="map-aside">
-                        <div class="flex-cont__row">
-                            <button class="map-aside__button map-aside__map-button">
-                                <img class="map-aside__pointer-image" src="assets/map-marker.png"/>MAP
-                            </button>
-                            <button class="map-aside__button map-aside__admissions-button">
-                                <span class="map-aside__italic-text">Prospective</span><span class="maps-aside__bold-text">FAMILIES »</span>
-                            </button>
-                        </div>
-                    </aside>
-            </header>
-        </body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Chris Mayes">
+        <meta property="og:image" content="https://commons.wikimedia.org/wiki/File:Parthenon_Athens.jpg">
+        <meta property="og:description" content="A demo website created for a fictional high school.">
+        <meta property="og:title" content="The Academy">
+        <title>The Academy - School for Modern-Day Philosophers</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+        <link rel="manifest" href="assets/site.webmanifest">
+        <link rel="stylesheet" href="index.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="home-header">
+            <section class="home-header__top-row">
+                <nav class="home-header__top-nav">  
+                    <ul>
+                        <li><a>DONATE</a></li>
+                        <li><a>PTA</a></li>
+                        <li><a>FORMER STUDENT</a></li>
+                    </ul>   
+                </nav>
+                <div class="flex-cont__row">
+                    <img class="home-header__logo" src="assets/academy-logo.png" /> 
+                    <span class="home-header__banner-text">THE ACADEMY</span>
+                </div> 
+            </section> 
+            <section class="home-header__middle-row flex-cont__row">
+                <form action="" class="search-form flex-cont__row">
+                    <input type="text" placeholder="Search..." name="search" class="search-form__input">
+                    <button type="submit" class="home-header__button"><img src="assets/search.png"/></button>
+                </form>
+                <a class="home-header__login-button home-header__button">LOGIN</a>
+            </section>
+            <section class="home-header__bottom-row">
+                <div class="flex-cont__row--align-bottom">
+                    <button class="display-toggle" id="menu">+ MENU</div>
+                </div>
+                <nav class="home-header__bottom-nav">
+                    <ul id="toggleView">
+                        <div class="flex-cont__col">
+                            <li><a>ABOUT</a></li>
+                            <li><a>ADMISSIONS</a></li>
+                            <li><a>ACADEMICS</a></li>
+                            <li><a>THE ARTS</a></li>
+                            <li><a>ATHLETICS</a></li>
+                            <li><a>CAMPUS LIFE</a></li>
+                            <li><a>INVEST IN ACADEMICS</a></li>
+                        </div>    
+                    </ul>
+                </nav>
+            </section>
+            <div class="home-header__banner-image image-2" id="bannerImage"></div>
+            <aside class="map-aside">
+                <div class="flex-cont__row">
+                    <button class="map-aside__button map-aside__map-button">
+                        <img class="map-aside__pointer-image" src="assets/map-marker.png"/>MAP
+                    </button>
+                    <button class="map-aside__button map-aside__admissions-button">
+                        <span class="map-aside__italic-text">Prospective</span><span class="map-aside__bold-text">FAMILIES »</span>
+                    </button>
+                </div>
+            </aside>
+        </div>
+        <main>
+            <section class="main__news-box">
+                <div class="main__news-header">
+                    <img class="main__news-icon" src="assets/news.png">
+                    <h1 class="main__headline-text">NEWS</h1>
+                </div>
+                <ul>
+                    <li><a href="https://bestlifeonline.com/funniest-newspaper-headlines-of-all-time/">
+                        Forecast Calls for Weather on Monday
+                    </a></li>
+                    <span>Posted 03/07/2019 2:00PM</span>
+
+                    <li><a href="https://bestlifeonline.com/funniest-newspaper-headlines-of-all-time/">
+                        Dozens of Cows Lose Job After Milk Prices Plummet
+                    </a></li>
+                    <span>Posted 02/11/2019 2:00PM</span>
+
+                    <li><a href="https://bestlifeonline.com/funniest-newspaper-headlines-of-all-time/">
+                        Miracle Cure Kills Fifth Patient
+                    </a></li>
+                    <span>Posted 02/02/2019 2:00PM</span>
+
+                    <li><a href="https://bestlifeonline.com/funniest-newspaper-headlines-of-all-time/">
+                        Man Accused of Killing Lawyer Recieves New Attorney
+                    </a></li>
+                    <span>Posted 01/09/2019 2:00PM</span>
+
+                    <li><a href="https://bestlifeonline.com/funniest-newspaper-headlines-of-all-time/">
+                            State Population to Double by 2040, Babies to Blame
+                    </a></li>
+                    <span>Posted 01/21/2019 2:00PM</span>
+
+                    <li><a href="https://bestlifeonline.com/funniest-newspaper-headlines-of-all-time/">
+                        Breathing Oxygen Linked to Staying Alive
+                    </a></li>
+                    <span id="lastNewsSpan">Posted 01/29/2019 2:00PM</span>
+                </ul>
+
+            </section>
+            <section class="main__spotlight-box">
+                <h1 class="main__spotlight-header">SPOTLIGHT</h1>
+                <div class="main__spotlight-image"></div>
+                <h2><a>Philosophy Research Grant Approved For $4.99</a></h2>
+                <p>The largest single investment of its kind sure to revolutionize modern approach to cataloguing trolley problem variants</p>
+                <a>Learn More »</a>
+
+                <hr/>
+
+                <h1 class="main__section-header">BIG EVENTS</h1>
+                <a className="main__image-anchor-one"></a>
+                <a className="main__image-anchor-two"></a>
+                <a className="main__image-anchor-three"></a>
+                <a className="main__image-anchor-four"></a>
+            </section>
+            <img/>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
 </html>
+

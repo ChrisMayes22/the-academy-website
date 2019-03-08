@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Raleway:400');
 
+/* ## Universal Selectors */
 * {
     box-sizing: border-box;
 }
@@ -22,49 +23,65 @@ button:hover, a:hover {
     cursor: pointer;
 }
 
-.header {
-    height: 22vh;
+/* ### General Purpose Containers ### */
+
+.flex-cont__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-height: 6.6vh;
+}
+
+.flex-cont__col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ### Header ### */
+
+.home-header {
     width: 100vw;
     color: #E5EFF5;
     font-family: 'PT Sans', sans-serif;
 }
 
-.header__top-row {
+.home-header__top-row {
     background-color: #005C98;
     width: 100vw;
     padding: 4px;
 }
 
-.header__top-nav {
+.home-header__top-nav {
     text-align: center;
     font-size: 0.75rem;
 }
 
-.header__top-nav li {
+.home-header__top-nav li {
     display: inline-block;
     list-style-type: none;
     margin: 4px 5px;
 }
 
-.header__middle-row {
+.home-header__middle-row {
     background-color: #1A6DA3;
     width: 100vw;
     padding: 4px;
 }
 
-.header__bottom-row {
+.home-header__bottom-row {
     background-color: #026ECA;
     width: 100vw;
 }
 
-.header__logo {
+.home-header__logo {
     max-height: 11.7vmin;
     max-width: 11.7vmin;
     margin: 0.1rem 0.5rem 0.1rem 0;
 
 }
 
-.header__banner-text {
+.home-header__banner-text {
     display: inline-block;
     padding: 2.5vw;
     font-weight: bold;
@@ -74,7 +91,7 @@ button:hover, a:hover {
     top: 0.1rem;
 }
 
-.header__login-button {
+.home-header__login-button {
     height: 30px;
     width: 25.9vw;
     background-color: #EBEBEB;
@@ -87,14 +104,14 @@ button:hover, a:hover {
     font-weight: bold;
 }
 
-.header__bottom-nav{
+.home-header__bottom-nav{
     font-size: 1.1rem;
     font-weight: 300;
     list-style-type: none;
 }
 
 
-.header__bottom-nav ul {
+.home-header__bottom-nav ul {
     height: 0px;
     background-color: #DDEAF4;
     transition-property: height;
@@ -102,52 +119,48 @@ button:hover, a:hover {
     transition-timing-function: linear;
 }
 
-.header__bottom-nav ul.active{
+.home-header__bottom-nav ul.active{
     height: 36.4vh;
     transition-property: height;
     transition-duration: 0.3s;
     transition-timing-function: linear;
 }
 
-.header__bottom-nav li {
+.home-header__bottom-nav li {
     opacity: 0;
+    z-index: -1;
     transition-property: opacity;
     transition-duration: 0.1s;
     transition-delay: 0s;
+    margin: 0.4rem 1rem;
+    font-family: 'Raleway', sans-serif;
 }
 
-.header__bottom-nav ul.active li {
+.home-header__bottom-nav ul.active li {
     opacity: 100;
+    z-index: 0;
     transition-property: opacity;
     transition-duration: 0.1s;
     transition-delay: 0.15s;
 }
 
-.header__bottom-nav ul{
+.home-header__bottom-nav ul{
     list-style-type: none;
 }
 
-.header__bottom-nav li{
-    margin: 0 0 0.5rem 1rem;
-    font-family: 'Raleway', sans-serif;
-    margin: 0.4rem 1rem;
-}
-
-.header__banner-image{
+.home-header__banner-image{
     height: 23.45vh;
     width: 100vw;
     background-size: cover;
-    background-repeat: repeat;
 }
 
-.header__button {
+.home-header__button {
     background-color: rgb(220, 220, 220);
 }
 
-.header__button:hover {
+.home-header__button:hover {
     background-color: #EBEBEB;
 }
-
 
 .image-0{
     background-image: url(./assets/the-academy0.jpg);
@@ -162,7 +175,6 @@ button:hover, a:hover {
     background-image: url(./assets/the-academy2.jpg);
     background-position: 100% 30%;
 }
-
 
 .search-form__input {
     width: 30.7vw;
@@ -183,19 +195,6 @@ button img {
     opacity: 100;
     font-family: 'Raleway', sans-serif;
     font-size: 0.75rem;
-}
-
-.flex-cont__row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-height: 6.6vh;
-}
-
-.flex-cont__col {
-    display: flex;
-    flex-direction: column;
 }
 
 .display-toggle {
@@ -223,7 +222,7 @@ button img {
 .map-aside {
     height: 6.4vh;
     width: 100vw;
-    margin: 1rem 0;
+    margin: 1rem 0 3rem 0;
     background-image: linear-gradient(to bottom, #FFCB00, #FFB437);
     font-family: 'PT Sans', sans-serif;
     font-size: 1.2rem;
@@ -273,4 +272,69 @@ button img {
     max-width: 1.2rem;
     position: relative;
     top: 2px;
+}
+
+/* ### Main ### */
+
+main section {
+    padding: 0.2rem;
+    margin: 8vw 5vw;
+    background-color: #FFFFFF;
+    font-family: 'PT Sans', sans-serif;
+    border: solid 1px rgb(200, 200, 200);
+}
+
+.main__news-box li {
+    list-style-type: none;
+    line-height: 0.9rem;
+}
+
+.main__news-box a {
+    display: inline-block;
+    margin: 0 0 0 0.8rem;
+    color: #003366;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main__news-box span {
+    color: #999999;
+    font-size: 0.65rem;
+    line-height: 1rem;
+    display: inline-block;
+    margin: 0 0 0.4rem 0.8rem;
+    vertical-align: top;
+}
+
+.main__news-header {
+    margin: 0.9rem 0 1.5rem 0.7rem
+}
+
+.main__headline-text{
+    margin: 0;
+    vertical-align: center;
+    font-size: 1.2rem;
+    color: #343434;
+    display: inline-block;
+}
+
+.main__spotlight-header {
+    font-size: 1.2rem;
+}
+
+.main__spotlight-image {
+    background-image: url(./assets/socrates.jpeg);
+    width: 72.3vw;
+    height: 27.4vh;
+    background-size: cover;
+}
+
+.main__news-icon {
+    max-height: 1.2rem;
+    max-width: 1.2rem;
+}
+
+#lastNewsSpan{
+    margin-bottom: 1.7rem;
 }
