@@ -33,7 +33,7 @@
             <section class="home-header__middle-row flex-cont__row">
                 <form action="" class="search-form flex-cont__row">
                     <input type="text" placeholder="Search..." name="search" class="search-form__input">
-                    <button type="submit" class="home-header__button"><img src="assets/search.png"/></button>
+                    <button type="submit" class="home-header__button"><img src="assets/icons/search.png"/></button>
                 </form>
                 <a class="home-header__login-button home-header__button">LOGIN</a>
             </section>
@@ -59,7 +59,7 @@
             <aside class="map-aside">
                 <div class="flex-cont__row">
                     <button class="map-aside__button map-aside__map-button">
-                        <img class="map-aside__pointer-image" src="assets/map-marker.png"/>MAP
+                        <img class="map-aside__pointer-image" src="assets/icons/map-marker.png"/>MAP
                     </button>
                     <button class="map-aside__button map-aside__admissions-button">
                         <span class="map-aside__italic-text">Prospective</span><span class="map-aside__bold-text">FAMILIES »</span>
@@ -68,10 +68,10 @@
             </aside>
         </div>
         <main>
-            <section class="main__news-box">
-                <div class="main__news-header">
-                    <img class="main__news-icon" src="assets/news.png">
-                    <h1 class="main__headline-text">NEWS</h1>
+            <section class="news">
+                <div class="news__header">
+                    <img class="news__icon" src="assets/icons/news.png">
+                    <h1 class="news__headline-text">NEWS</h1>
                 </div>
                 <ul>
                     <li><a href="https://bestlifeonline.com/funniest-newspaper-headlines-of-all-time/">
@@ -106,25 +106,73 @@
                 </ul>
 
             </section>
-            <section class="main__spotlight-box">
-                <h1 class="main__spotlight-header">SPOTLIGHT</h1>
-                <div class="main__spotlight-image"></div>
-                <h2><a>Philosophy Research Grant Approved For $4.99</a></h2>
-                <p>The largest single investment of its kind sure to revolutionize modern approach to cataloguing trolley problem variants</p>
-                <a>Learn More »</a>
+            <section class="spotlight">
+                <div class="spotlight__header">
+                    <img src="./assets/icons/film-tape.png"/><h1 class="spotlight__headline-text">SPOTLIGHT</h1>
+                </div>
+                <article>
+                    <a class="spotlight__spotlight-image"></a>
+                    <h2 class="spotlight__article-title">
+                        <a>Philosophy Grant Finalized: $4.99</a>
+                    </h2>
+                    <p class="spotlight__article-description">The largest single investment of its kind sure to revolutionize modern approach to cataloguing trolley problem variants</p>
+                    <a class="spotlight__learn-more">Learn More »</a>
+                </article>
 
-                <hr/>
+                <hr class="spotlight__section-divider"/>
 
-                <h1 class="main__section-header">BIG EVENTS</h1>
-                <a className="main__image-anchor-one"></a>
-                <a className="main__image-anchor-two"></a>
-                <a className="main__image-anchor-three"></a>
-                <a className="main__image-anchor-four"></a>
+                <div class="spotlight__header">
+                    <img src="./assets/icons/star.png"/><h1 class="spotlight__headline-text">BIG EVENTS</h1>
+                </div>
+                <div class="grid-cont">
+                    <a>
+                        <article class="spotlight__block-article" id="block-one"></article>
+                    </a>
+                    <a>
+                        <article class="spotlight__block-article" id="block-two"></article>
+                    </a>
+                    <a>
+                        <article class="spotlight__block-article" id="block-three"></article>
+                    </a>
+                    <a>
+                        <article class="spotlight__block-article" id="block-four"></article>
+                    </a>
+                </div>
             </section>
-            <img/>
+            <img src="assets/to-top.png"/>
         </main>
         <footer>
+            <div class="footer__background"></div>
+            <h1 class="foot__school-head">The Academy</h1>
+            <h5 class="foot-school-motto">Excellence is an Emergent Property of Featherless Bipeds</h5>
+            <p class="foot__address">
+                4242 N. Protagoras Ave.
+                <br/>
+                Somewhere, IN 90109
+            </p>
 
+            <a>CONTACT US »</a>
+
+            <p>
+                Administration: 999-999-9999
+                <br/>
+                Cave School: 123-456-7890
+                <br/>
+                Not-Cave School: 098-765-4321
+                <br/>
+                Cave-Again School: 564-738-2910
+            </p>
+
+            <strong>FOLLOW UP</strong>
+
+            <a><img src="./assets/icons/facebook.png"/></a>
+            <a><img src="./assets/icons/twitter.png"/></a>
+            <a><img src="./assets/icons/google.png"/></a>
+            <a><img src="./assets/icons/vimeo.png"/></a>
+            <a><img src="./assets/icons/youtube.png"/></a>
+            <a><img src="./assets/icons/email.png"/></a>
+
+            <a>Learn more about the developer</a>
         </footer>
     </body>
 </html>

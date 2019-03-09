@@ -23,6 +23,10 @@ button:hover, a:hover {
     cursor: pointer;
 }
 
+footer {
+    height: 40vh;
+}
+
 /* ### General Purpose Containers ### */
 
 .flex-cont__row {
@@ -36,6 +40,15 @@ button:hover, a:hover {
 .flex-cont__col {
     display: flex;
     flex-direction: column;
+}
+
+.grid-cont {
+    display: grid;
+    grid-template-columns: 41.3vw 41.3vw;
+    grid-template-rows: 23.2vh 23.2vh;
+    grid-gap: 0.7rem;
+    margin: 0 0 0.9rem 0.3rem;
+    color: rgb(255, 198, 0);
 }
 
 /* ### Header ### */
@@ -163,16 +176,16 @@ button:hover, a:hover {
 }
 
 .image-0{
-    background-image: url(./assets/the-academy0.jpg);
+    background-image: url(./assets/header/the-academy0.jpg);
 }
 
 .image-1{
-    background-image: url(./assets/the-academy1.jpg);
+    background-image: url(./assets/header/the-academy1.jpg);
     background-position: 100% 55%;
 }
 
 .image-2{
-    background-image: url(./assets/the-academy2.jpg);
+    background-image: url(./assets/header/the-academy2.jpg);
     background-position: 100% 30%;
 }
 
@@ -274,22 +287,30 @@ button img {
     top: 2px;
 }
 
+#lastNewsSpan{
+    margin-bottom: 1.7rem;
+}
+
 /* ### Main ### */
 
 main section {
     padding: 0.2rem;
-    margin: 8vw 5vw;
+    margin: 0 1.1rem 3.5rem 1.1rem;
     background-color: #FFFFFF;
     font-family: 'PT Sans', sans-serif;
     border: solid 1px rgb(200, 200, 200);
 }
 
-.main__news-box li {
+.news {
+    margin-bottom: 1.8rem;
+}
+
+.news li {
     list-style-type: none;
     line-height: 0.9rem;
 }
 
-.main__news-box a {
+.news a {
     display: inline-block;
     margin: 0 0 0 0.8rem;
     color: #003366;
@@ -298,7 +319,7 @@ main section {
     text-decoration: none;
 }
 
-.main__news-box span {
+.news span {
     color: #999999;
     font-size: 0.65rem;
     line-height: 1rem;
@@ -307,11 +328,11 @@ main section {
     vertical-align: top;
 }
 
-.main__news-header {
+.news__header {
     margin: 0.9rem 0 1.5rem 0.7rem
 }
 
-.main__headline-text{
+.news__headline-text{
     margin: 0;
     vertical-align: center;
     font-size: 1.2rem;
@@ -319,22 +340,99 @@ main section {
     display: inline-block;
 }
 
-.main__spotlight-header {
-    font-size: 1.2rem;
-}
-
-.main__spotlight-image {
-    background-image: url(./assets/socrates.jpeg);
-    width: 72.3vw;
-    height: 27.4vh;
-    background-size: cover;
-}
-
-.main__news-icon {
+[src*="icon"] {
     max-height: 1.2rem;
     max-width: 1.2rem;
 }
 
-#lastNewsSpan{
-    margin-bottom: 1.7rem;
+.spotlight__header {
+    margin: 0.2rem 0 1rem 0.2rem;
+}
+
+.spotlight__headline-text {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 0 0 0 0.3rem;
+}
+
+.spotlight__spotlight-image {
+    display: block;
+    background-image: url(./assets/articles/socrates.jpg);
+    width: 86.3vw;
+    margin: auto;
+    height: 27.4vh;
+    background-size: cover;
+}
+
+.spotlight__article-title {
+    margin: 0.2rem;
+    font-size: 1.1rem;
+    color: #026ECA;
+
+}
+
+.spotlight__learn-more{
+    color: #026ECA;
+    font-weight: bold;
+    margin: 0 0 2rem 0;
+}
+
+.spotlight__article-description {
+    margin: auto auto 0 auto;
+    line-height: 1.1;
+    line-height: 1.4rem;
+}
+
+.spotlight__section-divider {
+    margin: 2rem 0 1rem 0;
+}
+
+.spotlight__block-article {
+    background-color: blue;
+    height: 23.2vh;
+    width: 41.3vw;
+    display: block;
+}
+
+#block-one {
+    background-image: url(./assets/articles/olympus.jpg);
+    background-size: 26rem;
+    background-position: bottom 13rem right 10rem;
+}
+
+#block-two{
+    background-image: url(./assets/articles/conversation.jpg);
+    background-size: 26rem;
+    background-position: bottom left 23rem
+}
+
+#block-three{
+    background-image: url(./assets/articles/pythagoras.jpg);
+    background-size: 9rem;
+    background-position: left 11.5rem;
+}
+
+#block-four {
+    background-image: url(./assets/articles/poseidon.jpg);
+    background-size: 25rem;
+    background-position: left 20.5rem top 0rem;
+}
+
+[src*="to-top"] {
+    width: 3rem;
+    z-index: 1;
+    margin: 0;
+    position: absolute;
+    bottom: -59.9rem;
+    left: 1rem;
+}
+
+/* ### Footer ### */
+
+.footer__background {
+    width: 100vw;
+    height: 48vh;
+    z-index: -1;
+    background-image: url(./assets/footer/parthenon-bg-colorized.jpg);
+    position: absolute;
 }

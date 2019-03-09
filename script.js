@@ -26,7 +26,7 @@ els.menu.addEventListener("click", clickHandlers.addActive);
 // Setup & implement rotating banner image
 function Counter(cb){
     let i = 0;
-    this.getI = () => i;
+    this.getIncrement = () => i;
     this.increment = () => i++;
     this.reset = () => {
         i = 0;
@@ -35,7 +35,7 @@ function Counter(cb){
 }
 
 const imageCycler = new Counter(function(arr){
-    const i = this.getI();
+    const i = this.getIncrement();
     if(i < arr.length-1) this.increment()
     else this.reset();
     return function(){
